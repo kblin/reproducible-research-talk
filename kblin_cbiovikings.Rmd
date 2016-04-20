@@ -49,7 +49,7 @@ knitr::include_graphics("graphics/kblin_orchid_qr.png")
 - Reproducible Research
 - Reproducible Research in Practice
     - Challenges
-    - What does actually work (for me)
+- What does actually work (for me)
 
 
 # Reproducible Research
@@ -69,7 +69,7 @@ Ideally:
 
 # Reproducible Research in Practice
 
-> In theory, there is no difference between theory and practice. But, in practice, there is.
+> In theory, there is no difference between theory and practice. But, in practice, there is.<br>
 > -- <cite>Jan L. A. van de Snepscheut</cite>
 
 
@@ -86,4 +86,23 @@ Ideally:
 - ~ 5 mio articles published between 1990-2000
 - Of these ~ 100 retracted for "computational irreproducibility"
 - Chances that your paper is retracted: 1 : 5 000 000
-- If a paper takes ~ 8 months to write, assuming a 48 hour week, this only justifies spending an extra **115 seconds** for reproducibility
+- Assuming ~ 8 months to write paper and 48 hour work week, can spend **115 seconds** on reproducibility
+
+## Challenges | It's not a reflex yet
+
+![Bitten again](graphics/bitten_again.png)
+
+## But...
+
+Some points [raised by C. Titus Brown](http://ivory.idyll.org/blog/2014-myths-of-computational-reproducibility.html)
+
+- start small
+    - provide raw data
+    - provide code
+    - provide what version of what tool you called with what parameters
+- any reproducibility is better than no reproducibility
+
+# What works (for me)
+
+> It works for me.<br>
+> -- <cite>Christopher Walken</cite>
