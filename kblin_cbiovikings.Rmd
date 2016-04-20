@@ -106,3 +106,82 @@ Some points [raised by C. Titus Brown](http://ivory.idyll.org/blog/2014-myths-of
 
 > It works for me.<br>
 > -- <cite>Christopher Walken</cite>
+
+## Directory Layout
+
+As regular as possible, at least per project type.
+
+```
+2016-04-21_e.xamplis_de_novo/
+|-- fastqc/
+    |-- post/
+    \-- pre/
+|-- output/
+|-- reads/
+|-- scripts/
+|-- trimmed/
+|-- Makefile
+\-- README.md
+```
+
+## Directory Layout {.small}
+
+Use a script to create project layout
+
+```bash
+#!/bin/bash
+
+mkdir -p reads fastqc/{pre,post} output scripts trimmed
+touch README.md Makefile
+git init
+
+cat >> .gitignore <<EOF
+reads/*gz
+fastqc/*
+*.swp
+EOF
+
+git add .gitignore
+git commit -m "Initial commit"
+```
+
+
+## Lab Notebook
+
+- `README.md` file per project
+    - Have an explanation what the project is about for future self
+    - Then add whatever you're doing to it as it happens
+- copy & paste `README.md` into ELN
+- Keep in git
+
+## git | all the things! (almost)
+
+- Whenever possible, keep stuff in git
+- `README.md`, `Makefile`, scripts, etc.
+- Commit when something is changed
+- Don't commit reads / generated data
+
+(Maybe use [git-annex](http://git-annex.branchable.com/) for reads)
+
+## git | part deux
+
+- Have some git repo for random stuff unrelated to projects
+    - Avoid "where did I put this script?"
+- Make small commits of logical units of change
+- Write good commit messages
+
+## git commit messages
+
+I suggest the following format:
+
+```
+Short summary line < 60 characters
+
+A longer explanation of what the change is about.
+This is what your'll read to figure out what this change is about.
+Make this count, your future self will thank you.
+```
+
+# Questions?
+
+Thanks for your attention.
