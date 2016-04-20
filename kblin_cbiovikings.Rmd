@@ -1,0 +1,89 @@
+---
+title: "Practice What You Preach"
+subtitle: "Reproducible Research at the Front Lines of Science"
+date: "Tools for Reproducability in Bioinformatics<br>2016-04-21"
+author: "Kai Blin<br>Novo Nordisk Foundation Center for Biosustainability<br>"
+output:
+  ioslides_presentation:
+    logo: graphics/dtu_logo_square.png
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Hej | Who is that guy? {.build}
+
+Scientific Software Engineering
+
+Microbiology
+
+More info:
+
+<div class="columns-2">
+- [phdops.kblin.org](https://phdops.kblin.org/)
+- [github.com/kblin](https://github.com/kblin/)
+- @[kaiblin](https://twitter.com/kblin/)
+- [orcid.org/0000-0003-3764-6051](https://orcid.org/0000-0003-3764-6051)
+
+```{r, out.width = 100, fig.retina = NULL}
+knitr::include_graphics("graphics/kblin_orchid_qr.png")
+```
+</div>
+
+## Overview {.build}
+
+- Reproducible Research
+- Reproducible Research in Practice
+    - Problems
+
+## Overview
+
+- Reproducible Research
+- Reproducible Research in Practice
+    - Challenges
+
+## Overview
+
+- Reproducible Research
+- Reproducible Research in Practice
+    - Challenges
+    - What does actually work (for me)
+
+
+# Reproducible Research
+
+> There is no such thing as "reproducible science", there is just "science" and "not science". <br>
+> -- <cite>Someone on Twitter</cite>
+
+## Reproducibility
+
+Ideally:
+
+- Lab notebook available
+- Data on Figshare
+- Code on GitHub/Bitbucket (and Figshare)
+- Preprint on a preprint server
+
+
+# Reproducible Research in Practice
+
+> In theory, there is no difference between theory and practice. But, in practice, there is.
+> -- <cite>Jan L. A. van de Snepscheut</cite>
+
+
+## Challenges | Reproducibility isn't free
+
+- Making sure your research is 100% reproducible is a lot of work.
+- This takes time and effort. (see [Reproducibility isn't free](https://ropensci.org/blog/2014/06/09/reproducibility/) by FitzJohn *et al.*)
+- Even if you are convinced, is your PI / supervisor? Their boss?
+
+## Challenges | Reproducibility isn't compelling
+
+[Nice post](http://software-carpentry.org/blog/2013/02/correctness-isnt-compelling.html) by Greg Wilson in the context of [Software Carpentry](http://software-carpentry.org).
+
+- ~ 5 mio articles published between 1990-2000
+- Of these ~ 100 retracted for "computational irreproducibility"
+- Chances that your paper is retracted: 1 : 5 000 000
+- If a paper takes ~ 8 months to write, assuming a 48 hour week, this only justifies spending an extra **115 seconds** for reproducibility
